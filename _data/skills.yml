@@ -13,6 +13,12 @@
 - title: Wordpress
   level: 90%
   icon:
+- title: Android
+  level: 80%
+  icon:
+- title: Swift
+  level: 20%
+  icon:
 - title: HTML5
   level: 90%
   icon:
@@ -42,9 +48,6 @@
   icon:
 - title: Python
   level: 10%
-  icon:
-- title: Swift
-  level: 20%
   icon:
 - title: Elastic Search
   level: 30%
