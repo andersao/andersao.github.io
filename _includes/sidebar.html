@@ -1,0 +1,56 @@
+<div class="sidebar-wrapper">
+    <div class="profile-container">
+        <img class="profile" width="100" height="100" src="{{ site.data.profile.avatar | prepend: site.baseurl }}" alt="{{ site.data.profile.name }} - {{ site.data.profile.headline }}" />
+        <h1 class="name">{{ site.data.profile.name }}</h1>
+        <h3 class="tagline">{{ site.data.profile.headline }}</h3>
+    </div><!--//profile-container-->
+
+    {% if site.data.contacts %}
+    <div class="contact-container container-block">
+        <ul class="list-unstyled contact-list">
+            {% for item in site.data.contacts %}
+                <li class="{{ item.class }}">
+                    <i class="{{ item.icon }}"></i>
+                    <a href="{{ item.link }}" target="_blank">{{ item.text }}</a>
+                </li>
+            {% endfor %}
+        </ul>
+    </div><!--//contact-container-->
+    {% endif %}
+
+    {% if site.data.education %}
+    <div class="education-container container-block">
+        <h2 class="container-block-title">Education</h2>
+        {% for item in site.data.education %}
+        <div class="item">
+            <h4 class="degree">{{ item.degree }}</h4>
+            <h5 class="meta">{{ item.location }}</h5>
+            <div class="time">{{ item.time }}</div>
+        </div><!--//item-->
+        {% endfor %}
+    </div><!--//education-container-->
+    {% endif %}
+
+    {% if site.data.languages %}
+    <div class="languages-container container-block">
+        <h2 class="container-block-title">Languages</h2>
+        <ul class="list-unstyled interests-list">
+            {% for item in site.data.languages %}
+                <li>{{item.lang}} <span class="lang-desc">({{item.level}})</span></li>
+            {% endfor %}
+        </ul>
+    </div><!--//interests-->
+    {% endif %}
+
+    {% if site.data.interests %}
+    <div class="interests-container container-block">
+        <h2 class="container-block-title">Interests</h2>
+        <ul class="list-unstyled interests-list">
+            {% for item in site.data.interests %}
+                <li>{{item.text}}</li>
+            {% endfor %}
+        </ul>
+    </div><!--//interests-->
+    {% endif %}
+
+</div><!--//sidebar-wrapper-->

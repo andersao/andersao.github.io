@@ -1,0 +1,15 @@
+- title: L5-Repository
+  short_description: Laravel 5 - Repositories to abstract the database layer
+  time:
+  icon: fa-github
+  link: https://github.com/andersao/l5-repository
+- title: Laravel Request Logger
+  short_description: HTTP request logger middleware for Laravel
+  time:
+  icon: fa-github
+  link: https://github.com/andersao/laravel-request-logger
+- title: Laravel Validator
+  short_description: Laravel Validation Service
+  time:
+  icon: fa-github
+  link: https://github.com/andersao/laravel-validator

@@ -1,0 +1,16 @@
+- class: email
+  icon:
+  link: \#
+  text: contact@andersonandra.de
+- class: github
+  icon: fa fa-github
+  link: https://github.com/andersao
+  text: github.com/andersao
+- class: linkedin
+  icon: fa fa-linkedin
+  link: https://www.linkedin.com/in/andersonandradee/
+  text: andersonandradee
+- class: twitter
+  icon: fa fa-twitter
+  link: https://twitter.com/andersao_
+  text: twitter.com/andersao_

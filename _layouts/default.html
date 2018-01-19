@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
+
+<!--head-->
+{% include head.html %}
+
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id={{ site.gtm_container_id }}" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<div class="wrapper">
+
+    <!--sidebar-->
+    {% include sidebar.html %}
+
+    <div class="main-wrapper">
+
+        <!--content-->
+        {{ content }}
+
+    </div><!--//main-body-->
+</div>
+
+<!--footer-->
+{% include footer.html %}
+
+</body>
+</html>
+

@@ -1,0 +1,25 @@
+{% if site.data.projects %}
+<section class="section projects-section">
+    <h2 class="section-title"><i class="fa fa-archive"></i>Projects</h2>
+    <!--
+    <div class="intro">
+        <p>You can list your side projects or open source libraries in this section. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et ligula in nunc bibendum fringilla a eu lectus.</p>
+    </div>
+    -->
+    <!--//intro-->
+
+    {% for item in site.data.projects %}
+    <div class="item">
+        <span class="project-title">
+            {% if item.icon %}<i class="fa {{item.icon}}"></i>{% endif %}
+            {% if item.link %}<a href="{{item.link}}" target="_blank">{{item.title}}</a>{% else %}{{item.title}}{% endif %}
+        </span>
+        {% if item.short_description %}
+        -
+        <span class="project-tagline">{{item.short_description}}</span>
+        {% endif %}
+    </div><!--//item-->
+    {% endfor %}
+
+</section><!--//section-->
+{% endif %}

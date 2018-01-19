@@ -1,0 +1,19 @@
+{% if site.data.experiences %}
+<section class="section experiences-section">
+    <h2 class="section-title"><i class="fa fa-briefcase"></i>Experiences</h2>
+    {% for item in site.data.experiences %}
+    <div class="item">
+        <div class="meta">
+            <div class="upper-row">
+                <h3 class="job-title">{{item.title}}</h3>
+                <div class="time">{{item.time}}</div>
+            </div><!--//upper-row-->
+            <div class="company">
+                {{item.company}} {% if item.location %} | <i class="fa fa-globe"></i> {{item.location}} {% endif %}
+            </div>
+        </div><!--//meta-->
+        <div class="details">{{item.details}}</div><!--//details-->
+    </div><!--//item-->
+    {% endfor %}
+</section><!--//section-->
+{% endif %}
