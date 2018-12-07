@@ -10,14 +10,17 @@
 - title: Angular.JS
   level: 80%
   icon:
+- title: Vue.JS
+  level: 60%
+  icon:
 - title: Wordpress
   level: 90%
   icon:
 - title: Android
-  level: 80%
+  level: 70%
   icon:
 - title: Swift
-  level: 50%
+  level: 30%
   icon:
 - title: HTML5
   level: 90%
@@ -50,10 +53,10 @@
   level: 10%
   icon:
 - title: Elastic Search
-  level: 30%
+  level: 50%
   icon:
 - title: Polopoly
-  level: 60%
+  level: 80%
   icon:
 - title: Ionic
   level: 80%

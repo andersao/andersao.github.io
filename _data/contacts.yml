@@ -1,7 +1,7 @@
 - class: email
   icon:
   link: \#
-  text: contact@andersonandra.de
+  text: contato@andersonandra.de
 - class: github
   icon: fa fa-github
   link: https://github.com/andersao
